@@ -2,7 +2,7 @@ import { Subscription } from 'rxjs/Rx';
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { Store } from '@ngrx/store';
-import { INCREMENT, DECREMENT, RESET } from 'app/counter/counter.component';
+import { INCREMENT, DECREMENT, RESET } from 'app/reducers/counter-reducer.component';
 
 interface AppState {
   counter: number;

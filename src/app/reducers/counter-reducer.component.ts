@@ -13,6 +13,7 @@ export function counterReducer(state: number = 0, action: Action) {
       return state - 1;
 
     case RESET:
+      console.log('inside counterReducer');
       return 0;
 
     default:

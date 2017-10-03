@@ -13,6 +13,7 @@ export class CountEffects {
   // Listen for the 'RESET' action
   @Effect() reset$: Observable<Action> = this.actions$.ofType('RESET')
     .mergeMap(action => {
+      console.log('inside CountEffects');
       console.log('Counter value before reset: ', action.payload);
       return of({ type: 'RESETTED', payload: 'ha!' });
     }
