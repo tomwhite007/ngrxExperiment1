@@ -23,7 +23,7 @@ export class CountEffects {
   @Effect() resetted$: Observable<Action> = this.actions$.ofType('RESETTED')
     .mergeMap(action => {
       console.log(action.payload, 'Counter has been resetted!');
-      return of({ type: 'AFTER-RESETTED', action: action.payload });
+      return of({ type: 'AFTER-RESETTED', payload: action.payload });
     }
   );
 
